@@ -1,4 +1,4 @@
-package it.pusi77.bot;
+package it.pusi77.meteopaviabot.bot;
 
 /**
  * Contains default replies written in italian.

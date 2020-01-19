@@ -1,8 +1,8 @@
-package it.pusi77.bot;
+package it.pusi77.meteopaviabot.bot;
 
-import it.pusi77.Constants;
-import it.pusi77.Debug;
-import it.pusi77.weather.WeatherUpdater;
+import it.pusi77.meteopaviabot.Constants;
+import it.pusi77.meteopaviabot.Debug;
+import it.pusi77.meteopaviabot.weather.WeatherUpdater;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
@@ -18,7 +18,7 @@ public class Bot extends TelegramLongPollingBot {
     private Timer timer;
 
     /**
-     * Every 2 hours download a weather update using Updater(TimerTask).
+     * Every 2 hours download a it.pusi77.meteopaviabot.weather update using Updater(TimerTask).
      * MeteoAM data is update every 3 hours starting from 1.
      */
     public Bot() {

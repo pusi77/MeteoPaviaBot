@@ -1,14 +1,14 @@
-package it.pusi77.weather;
+package it.pusi77.meteopaviabot.weather;
 
 /**
- * Define a TimeSlot format describing weather in a few hours time window. It has a lot
+ * Define a TimeSlot format describing it.pusi77.meteopaviabot.weather in a few hours time window. It has a lot
  * of attributes, i ignore some of them meaning, but they were on the MeteoAM JSON so i
  * included them.
  */
 public class TimeSlot {
     private String val;         //Day and Time
     private String valh;        //Time (only 2 digit hour)
-    private String desc;        //Very short weather description
+    private String desc;        //Very short it.pusi77.meteopaviabot.weather description
     private String img;         //Probably referred to app's images
     private String imgBig;      //Probably referred to app's images
     private String tp;          //Often equals to t
@@ -42,7 +42,7 @@ public class TimeSlot {
     }
 
     /**
-     * Return a very short description of the TimeSlot weather.
+     * Return a very short description of the TimeSlot it.pusi77.meteopaviabot.weather.
      * @return description
      */
     public String getDesc() {
@@ -74,8 +74,8 @@ public class TimeSlot {
     }
 
     /**
-     * Return a printable weather for the TimeSlot.
-     * @return printable weather
+     * Return a printable it.pusi77.meteopaviabot.weather for the TimeSlot.
+     * @return printable it.pusi77.meteopaviabot.weather
      * */
     public String getPrintableWeather() {
         String slotWeather = (

@@ -1,6 +1,6 @@
-package it.pusi77;
+package it.pusi77.meteopaviabot;
 
-import it.pusi77.bot.Bot;
+import it.pusi77.meteopaviabot.bot.Bot;
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;

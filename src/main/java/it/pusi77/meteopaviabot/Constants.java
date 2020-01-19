@@ -1,4 +1,4 @@
-package it.pusi77;
+package it.pusi77.meteopaviabot;
 
 /**
  * Contains some constants.

@@ -1,9 +1,9 @@
-package it.pusi77.weather;
+package it.pusi77.meteopaviabot.weather;
 
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
-import it.pusi77.Constants;
-import it.pusi77.Debug;
+import it.pusi77.meteopaviabot.Constants;
+import it.pusi77.meteopaviabot.Debug;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -69,8 +69,8 @@ public class WeatherUpdater {
     }
 
     /**
-     * Returns the updated weather.
-     * @return the updated weather
+     * Returns the updated it.pusi77.meteopaviabot.weather.
+     * @return the updated it.pusi77.meteopaviabot.weather
      */
     public Weather getWeather() {
         return weather;

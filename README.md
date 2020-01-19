@@ -6,13 +6,11 @@ Il bot utilizza le API private di MeteoAM, quindi non sono certo di poter render
 ## Utilizzo
 Per poter avviare il bot è necessario reperire l'url delle API di MeteoAM (non sarà difficile ottenerlo tramite l'app ufficiale) e il token da BotFather. A questo punto bisogna avviare il programma da linea di comando inserendo il token e l'url come parametri, in questo ordine.
 
-'''
-Esempio: java -jar MeteoPaviaBot.jar TOKEN123456789 http://somesite.something/data.json
-'''
 
-Sono necessarie le seguenti librerie esterne:
-* com.google.code.gson:gson:2.8.6
-* org.telegram:telegrambots:4.5
+Esempio: java -jar MeteoPaviaBot.jar TOKEN123456789 http://somesite.something/data.json
+
+
+
 # ToDo
 - [ ] Aggiungere eccezioni in caso di Token o Url errati
 - [ ] Aggiungere emoticons alle risposte

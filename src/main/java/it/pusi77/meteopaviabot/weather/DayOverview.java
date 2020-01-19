@@ -1,13 +1,13 @@
-package it.pusi77.weather;
+package it.pusi77.meteopaviabot.weather;
 
 /**
- * Define a DayOverview format describing an entire day weather. It has a lot of
+ * Define a DayOverview format describing an entire day it.pusi77.meteopaviabot.weather. It has a lot of
  * attributes, i ignore some of them meaning, but they were on the MeteoAM JSON so
  * i included them.
  */
 public class DayOverview {
     private String val;         //Weather date
-    private String desc;        //Very short weather description
+    private String desc;        //Very short it.pusi77.meteopaviabot.weather description
     private String desc2;       //No idea, usually null
     private String img;         //Probably referred to app's images
     private String imgBig;      //Probably referred to app's images

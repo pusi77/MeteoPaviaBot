@@ -1,8 +1,8 @@
-package it.pusi77.bot;
+package it.pusi77.meteopaviabot.bot;
 
-import it.pusi77.Constants;
-import it.pusi77.weather.TimeSlot;
-import it.pusi77.weather.WeatherUpdater;
+import it.pusi77.meteopaviabot.Constants;
+import it.pusi77.meteopaviabot.weather.TimeSlot;
+import it.pusi77.meteopaviabot.weather.WeatherUpdater;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
@@ -22,7 +22,7 @@ public class MessageReplier {
     private String selectedDay;
 
     /**
-     * Needs a weather updater object as parameter to be able to access weather data. Also launch the daysKeyboard init.
+     * Needs a it.pusi77.meteopaviabot.weather updater object as parameter to be able to access it.pusi77.meteopaviabot.weather data. Also launch the daysKeyboard init.
      * @param weatherUpdater weatherUpdater object
      */
     public MessageReplier(WeatherUpdater weatherUpdater) {

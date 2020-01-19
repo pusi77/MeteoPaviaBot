@@ -1,12 +1,12 @@
-package it.pusi77.bot;
+package it.pusi77.meteopaviabot.bot;
 
-import it.pusi77.Debug;
-import it.pusi77.weather.WeatherUpdater;
+import it.pusi77.meteopaviabot.Debug;
+import it.pusi77.meteopaviabot.weather.WeatherUpdater;
 import java.io.IOException;
 import java.util.TimerTask;
 
 /**
- * It's an extension of TimerTask, launch a new weather update.
+ * It's an extension of TimerTask, launch a new it.pusi77.meteopaviabot.weather update.
  */
 public class Updater extends TimerTask {
     private WeatherUpdater weatherUpdater;

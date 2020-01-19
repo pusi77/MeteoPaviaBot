@@ -1,4 +1,4 @@
-package it.pusi77.weather;
+package it.pusi77.meteopaviabot.weather;
 
 /**
  * Define a Weather format composed by the DayOverview and 4 days divided in TimeSlots
@@ -33,7 +33,7 @@ public class Weather {
             }
         }
         if (chosenDay == null) {
-            System.out.println("[ERROR] " + date + " not present in weather data");
+            System.out.println("[ERROR] " + date + " not present in it.pusi77.meteopaviabot.weather data");
         }
         String todayOverview = (    "Previsioni per " + chosenDay.getDate() + ":\n" +
                                     chosenDay.getDesc() + "\n" +
@@ -43,7 +43,7 @@ public class Weather {
     }
 
     /**
-     * Return an array with all weather dates found in the json.
+     * Return an array with all it.pusi77.meteopaviabot.weather dates found in the json.
      * @return array of dates found in json
      */
     public String[] getWeatherDates() {
