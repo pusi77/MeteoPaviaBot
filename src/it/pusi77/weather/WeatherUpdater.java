@@ -2,9 +2,11 @@ package it.pusi77.weather;
 
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
-import it.pusi77.ChangeMeValues;
+import it.pusi77.Constants;
 import it.pusi77.Debug;
-import java.io.*;
+
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -27,7 +29,7 @@ public class WeatherUpdater {
      */
     public WeatherUpdater() {
         try {
-            this.url = new URL(ChangeMeValues.sourceUrl);
+            this.url = new URL(Constants.SOURCE_URL);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }

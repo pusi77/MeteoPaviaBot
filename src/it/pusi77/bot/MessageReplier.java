@@ -59,9 +59,9 @@ public class MessageReplier {
         }
 
         // Check if message is a valid date in "nextFourDays" text format (from virtual keyboard)
-        if (Arrays.asList(Constants.nextFourDays).contains(message.getText())) {
+        if (Arrays.asList(Constants.NEXT_FOUR_DAYS).contains(message.getText())) {
             int i = 0;
-            while (!message.getText().equals(Constants.nextFourDays[i]) && i < Constants.nextFourDays.length) {
+            while (!message.getText().equals(Constants.NEXT_FOUR_DAYS[i]) && i < Constants.NEXT_FOUR_DAYS.length) {
                 i++;
             }
             selectedDay = weatherUpdater.getWeather().getWeatherDates()[i];
@@ -109,10 +109,10 @@ public class MessageReplier {
         KeyboardRow row = new KeyboardRow();
         keyboard.add(row);
 
-        row.add(Constants.nextFourDays[0]);
-        row.add(Constants.nextFourDays[1]);
-        row.add(Constants.nextFourDays[2]);
-        row.add(Constants.nextFourDays[3]);
+        row.add(Constants.NEXT_FOUR_DAYS[0]);
+        row.add(Constants.NEXT_FOUR_DAYS[1]);
+        row.add(Constants.NEXT_FOUR_DAYS[2]);
+        row.add(Constants.NEXT_FOUR_DAYS[3]);
         daysKeyboard.setKeyboard(keyboard);
     }
 

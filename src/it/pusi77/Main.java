@@ -11,13 +11,17 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 public class Main {
 
     /**
-     * Check if ChangeMeValues were changed and if so launches main.
-     * @param args command line args
+     * Check token and url args and if present write them in Constants.
+     * @param args command line args botToken and sourceUrl
      */
     public static void main(String[] args) {
 
-        if (ChangeMeValues.BotToken == null || ChangeMeValues.sourceUrl == null){
-            System.out.println("[ERROR] Values in ChangeMeValues class need to be changed before bot usage!");
+        if (args.length == 0) {
+            System.out.println("No arguments found! You need pass bot token and MeteoAM url.\n" +
+                                "Eg: java -jar MeteoPaviaBot.jar TOKEN123456789 http://somesite.something/data.json");
+            System.exit(1);
+        } else if (args[0] != null && args[1] != null) {
+            Constants.initConstants(args[0], args[1]);
         }
 
         ApiContextInitializer.init();       //Initialize Api Context

@@ -1,6 +1,5 @@
 package it.pusi77.bot;
 
-import it.pusi77.ChangeMeValues;
 import it.pusi77.Constants;
 import it.pusi77.Debug;
 import it.pusi77.weather.WeatherUpdater;
@@ -28,7 +27,7 @@ public class Bot extends TelegramLongPollingBot {
         updater = new Updater(weatherUpdater);
         messageReplier = new MessageReplier(weatherUpdater);
         timer = new Timer(true); // run as daemon
-        timer.scheduleAtFixedRate(updater, 1, Constants.twoHours);
+        timer.scheduleAtFixedRate(updater, 1, Constants.TWO_HOURS);
     }
 
     /**
@@ -55,7 +54,7 @@ public class Bot extends TelegramLongPollingBot {
      */
     @Override
     public String getBotUsername() {
-        return "meteopaviabot";
+        return Constants.BOT_NAME;
     }
 
     /**
@@ -64,6 +63,6 @@ public class Bot extends TelegramLongPollingBot {
      */
     @Override
     public String getBotToken() {
-        return ChangeMeValues.BotToken;
+        return Constants.BOT_TOKEN;
     }
 }
