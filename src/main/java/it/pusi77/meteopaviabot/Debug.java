@@ -8,7 +8,7 @@ public class Debug {
     /**
      * Boolean value controlling all the debug methods.
      */
-    public static boolean debug =  true;
+    public static boolean debug = false;
 
     /**
      * Like println with "[DEBUG]" prefix;
