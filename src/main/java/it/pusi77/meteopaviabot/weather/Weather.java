@@ -38,7 +38,7 @@ public class Weather {
         String todayOverview = (    "Previsioni per " + chosenDay.getDate() + ":\n" +
                                     chosenDay.getDesc() + "\n" +
                                     "Minima/Massima: " + chosenDay.getT_min() + "/" + chosenDay.getT_max() + "\n" +
-                                    "Vento a " + chosenDay.getWint() + "Km/h proveniente da " + chosenDay.getWintm());
+                                    "Vento a " + chosenDay.getWint() + " proveniente da " + chosenDay.getWintm());
         return todayOverview;
     }
 
