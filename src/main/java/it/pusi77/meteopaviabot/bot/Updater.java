@@ -2,6 +2,7 @@ package it.pusi77.meteopaviabot.bot;
 
 import it.pusi77.meteopaviabot.Debug;
 import it.pusi77.meteopaviabot.weather.WeatherUpdater;
+
 import java.io.IOException;
 import java.util.TimerTask;
 

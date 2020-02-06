@@ -23,6 +23,11 @@ public class Main {
         } else if (args[0] != null && args[1] != null) {
             Constants.initConstants(args[0], args[1]);
         }
+        if(args[3] != null) {
+            if (args[3].equals("debug")) {
+                Debug.debug = true;
+            }
+        }
 
         ApiContextInitializer.init();       //Initialize Api Context
         TelegramBotsApi botsApi = new TelegramBotsApi();
