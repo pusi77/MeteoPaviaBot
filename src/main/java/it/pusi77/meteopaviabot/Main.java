@@ -19,7 +19,7 @@ public class Main {
         if (args.length == 0) {
             System.out.println("No arguments found! You need pass bot token and MeteoAM url.\n" +
                                 "Eg: java -jar MeteoPaviaBot.jar TOKEN123456789 http://somesite.something/data.json");
-            System.exit(1);
+            System.exit(0);
         } else if (args[0] != null && args[1] != null) {
             Constants.initConstants(args[0], args[1]);
         }

@@ -54,11 +54,5 @@
         </dependency>
     </dependencies>
 
-    <distributionManagement>
-        <repository>
-            <id>github</id>
-            <name>GitHub Packages</name>
-            <url>https://github.com/pusi77/MeteoPaviaBot</url>
-        </repository>
-    </distributionManagement>
+
 </project>
