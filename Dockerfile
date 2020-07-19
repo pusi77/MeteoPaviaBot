@@ -4,6 +4,7 @@ ARG URL
 
 FROM maven:3.6-openjdk-8 AS build
 WORKDIR /usr/src/app
+COPY pom.xml .
 RUN mvn -f pom.xml clean package
 
 FROM java:8-jdk-alpine
